@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+
+  margin: 30px 0;
+}
+
+.addUserBtn {
+  outline: 0;
+  border: 0;
+  border: 1px solid gainsboro;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main {
+  margin: 30px;
+}

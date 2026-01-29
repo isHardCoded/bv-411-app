@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  flex-direction: column-reverse;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.notFound {
+  text-align: center;
+  margin-top: 20px;
+  color: gray;
+}

@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.notFound {
+  text-align: center;
+  margin-top: 20px;
+  color: gray;
+}
