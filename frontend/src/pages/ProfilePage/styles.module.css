@@ -5,6 +5,12 @@
   display: flex;
 }
 
+.avatarWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .avatar {
   border-radius: 32px;
   width: 250px;

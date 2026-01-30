@@ -18,10 +18,53 @@ class UserController {
           id: user.id,
           username: user.username,
           email: user.email,
+          avatar: user.avatar
         },
       });
     } catch (e) {
       next(e);
+    }
+  }
+
+  async uploadAvatar(req, res, next) {
+    try {
+      if (!req.files || !req.files.avatar) {
+        return res.status(400).json({
+          error: "File not found"
+        })
+      }
+
+      const user = await userService.uploadUserAvatar(
+        req.userId,
+        req.files.avatar
+      )
+
+      res.json({
+        message: "Avatar uploaded",
+        data: {
+          username: user.username,
+          avatar: user.avatar
+        }
+      })
+
+    } catch (e) {
+      next(e)
+    }
+  }
+
+  async deleteAvatar(req, res, next) {
+    try {
+      const user = await userService.deleteUserAvatar(req.userId)
+
+      res.json({
+        message: "Avatar deleted",
+        data: {
+          username: user.username,
+          avatar: user.avatar
+        }
+      })
+    } catch(e) {
+      next(e)
     }
   }
 }

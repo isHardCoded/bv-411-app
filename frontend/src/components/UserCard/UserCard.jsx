@@ -15,7 +15,7 @@ export function UserCard({ user }) {
         className={s.avatar}
         src={
           user.avatar
-            ? user.avatar
+            ? `http://localhost:3000${user.avatar}`
             : 'https://www.gravatar.com/avatar/f1e046006b604d6684b212b2ef266d5ede9d86d597cdefc00fa622176bd335f0?default=retro&size=256'
         }
         alt=""
