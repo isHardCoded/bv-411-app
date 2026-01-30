@@ -9,7 +9,7 @@ router.use(auth);
 router.get('/:id', userController.getUserById);
 router.get('/', userController.getAllUsers);
 
-router.post('/avatar', userController.uploadAvatar)
-router.delete('/avatar', userController.deleteAvatar)
+router.post('/avatar', userController.uploadAvatar);
+router.delete('/avatar', userController.deleteAvatar);
 
 export default router;
