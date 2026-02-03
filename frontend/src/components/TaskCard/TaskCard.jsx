@@ -124,7 +124,13 @@ export const TaskCard = ({ task, deleteTask }) => {
         </div>
       </div>
 
-      {isEditFormOpen && <TaskEditForm isEditFormOpen={isEditFormOpen} setIsEditFormOpen={setIsEditFormOpen} task={task} />}
+      {isEditFormOpen && (
+        <TaskEditForm
+          isEditFormOpen={isEditFormOpen}
+          setIsEditFormOpen={setIsEditFormOpen}
+          task={task}
+        />
+      )}
     </>
   );
 };

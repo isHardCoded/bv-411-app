@@ -11,14 +11,13 @@ export function UserCard({ user }) {
       }}
       className={s.card}
     >
-
       {user.avatar ? (
         <img className={s.avatar} src={`http://localhost:3000${user.avatar}`} />
-      ) : ( 
+      ) : (
         <div className={s.defaultAvatar}>
-            <div className={s.avatarHead}></div>
-            <div className={s.avatarBody}></div>
-          </div>
+          <div className={s.avatarHead}></div>
+          <div className={s.avatarBody}></div>
+        </div>
       )}
 
       <div className={s.content}>

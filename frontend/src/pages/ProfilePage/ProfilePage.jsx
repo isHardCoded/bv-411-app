@@ -25,15 +25,17 @@ export const ProfilePage = () => {
     <>
       <div className={s.card}>
         <div className={s.avatarWrapper}>
-          
-                {user.avatar ? (
-                  <img className={s.avatar} src={`http://localhost:3000${user.avatar}`} />
-                ) : ( 
-                  <div className={s.defaultAvatar}>
-                      <div className={s.avatarHead}></div>
-                      <div className={s.avatarBody}></div>
-                    </div>
-                )}
+          {user.avatar ? (
+            <img
+              className={s.avatar}
+              src={`http://localhost:3000${user.avatar}`}
+            />
+          ) : (
+            <div className={s.defaultAvatar}>
+              <div className={s.avatarHead}></div>
+              <div className={s.avatarBody}></div>
+            </div>
+          )}
         </div>
 
         <div>
