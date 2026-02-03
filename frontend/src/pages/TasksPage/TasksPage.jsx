@@ -38,7 +38,7 @@ export const TasksPage = () => {
   return (
     <div className={s.root}>
       <div className={s.actions}>
-        <input className={s.search} type="text" placeholder="Search..." />
+        {/* <input className={s.search} type="text" placeholder="Search..." /> */}
         <button className={s.add} onClick={() => setIsOpen(true)}>
           Add
         </button>

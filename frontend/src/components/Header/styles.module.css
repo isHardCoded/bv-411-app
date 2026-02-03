@@ -17,7 +17,7 @@
   text-decoration: none;
   color: black;
   border-radius: 8px;
-  padding: 5px;
+  padding: 8px 20px;
 
   transition: 0.3s ease all;
 }
@@ -26,8 +26,8 @@
   text-decoration: none;
   color: black;
   border-radius: 8px;
-  padding: 5px;
-  background-color: rgb(231, 231, 231);
+  padding: 8px 20px;
+  background-color: rgb(242, 242, 242);
 
   transition: 0.3s ease all;
 }
