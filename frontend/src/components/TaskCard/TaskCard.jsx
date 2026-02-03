@@ -11,7 +11,7 @@ import { useAuth } from '../../context/AuthContext';
 import { TaskEditForm } from '../TaskEditForm/TaskEditForm';
 
 export const TaskCard = ({ task, deleteTask }) => {
-  // const [user, setUser] = useState({});
+  const [user, setUser] = useState({});
   // const [assigneesUsers, setAssigneesUsers] = useState([]);
   const [isTooltipOpen, setIsTooltipOpen] = useState(false);
   const [isEditFormOpen, setIsEditFormOpen] = useState(false);
@@ -21,10 +21,10 @@ export const TaskCard = ({ task, deleteTask }) => {
 
   // const { assignees } = task
 
-  // const getUser = async () => {
-  //   const id = task.userId;
-  //   setUser(await USER_SERVICE.getById(id));
-  // };
+  const getUser = async () => {
+    const id = task.userId;
+    setUser(await USER_SERVICE.getById(id));
+  };
 
   // const getAssignees = async () => {
   //   if (!assignees) return;
@@ -101,8 +101,8 @@ export const TaskCard = ({ task, deleteTask }) => {
         <div className={s.details}>
           <div className={s.author}>
             <p>Author</p>
-            {/* <img className={s.avatar} src={user.avatar} alt={`${user.firstname} ${user.lastname}`}
-                title={`${user.firstname} ${user.lastname}`} /> */}
+            <img className={s.avatar} src={user.avatar} alt={`${user.firstname} ${user.lastname}`}
+                title={`${user.firstname} ${user.lastname}`} />
           </div>
 
           {/* {assigneesUsers.length > 0 && (

@@ -1,0 +1,28 @@
+
+.defaultAvatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 32px;
+  width: 250px;
+  height: 250px;
+  background-color: gainsboro;
+}
+
+.avatarHead {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(209, 209, 209);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.avatarBody {
+  width: 200px;
+  height: 100px;
+  border-radius: 50% 50% 24px 24px;
+  background-color: rgb(209, 209, 209);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+}

@@ -41,7 +41,7 @@
   font-weight: 600;
   color: white;
   border: none;
-  border-radius: 12px;
+  border-radius: 22px;
   cursor: pointer;
   background-color: #157bff;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,5 +54,5 @@
 
 .add:active {
   background-color: #2e89ff;
-  scale: 0.9;
+  scale: 0.98;
 }

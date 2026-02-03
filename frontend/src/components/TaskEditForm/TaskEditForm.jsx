@@ -54,27 +54,34 @@ export const TaskEditForm = ({ isEditFormOpen, setIsEditFormOpen, task }) => {
   return (
     <div className={s.overlay}>
       <form onSubmit={handleSubmit} className={s.form}>
-        <input
-          onChange={handleChange}
-          className={s.input}
-          type="text"
-          placeholder="Enter title"
-          value={data.title}
-          name="title"
-          required
-          disabled={isLoading}
-        />
-        <input
-          onChange={handleChange}
-          className={s.input}
-          type="text"
-          placeholder="Enter description"
-          value={data.description}
-          name="description"
-          required
-          disabled={isLoading}
-        />
-
+        <div className={s.field}>
+                  <label htmlFor="title" className={s.label}>
+                    Title
+                  </label>
+                  <input
+                    onChange={handleChange}
+                    className={s.input}
+                    type="text"
+                    placeholder="Enter title"
+                    value={data.title}
+                    name="title"
+                    required
+                  />
+                </div>
+                <div className={s.field}>
+                  <label htmlFor="description" className={s.label}>
+                    Description
+                  </label>
+                  <input
+                    onChange={handleChange}
+                    className={s.input}
+                    type="text"
+                    placeholder="Enter description"
+                    value={data.description}
+                    name="description"
+                    required
+                  />
+                </div>
         <div className={s.buttons}>
           <button
             type="button"

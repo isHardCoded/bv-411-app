@@ -56,24 +56,34 @@ export const TaskForm = ({ addTask, setIsOpen }) => {
   return (
     <div className={s.overlay}>
       <form onSubmit={handleSubmit} className={s.form}>
-        <input
-          onChange={handleChange}
-          className={s.input}
-          type="text"
-          placeholder="Enter title"
-          value={data.title}
-          name="title"
-          required
-        />
-        <input
-          onChange={handleChange}
-          className={s.input}
-          type="text"
-          placeholder="Enter description"
-          value={data.description}
-          name="description"
-          required
-        />
+        <div className={s.field}>
+          <label htmlFor="title" className={s.label}>
+            Title
+          </label>
+          <input
+            onChange={handleChange}
+            className={s.input}
+            type="text"
+            placeholder="Enter title"
+            value={data.title}
+            name="title"
+            required
+          />
+        </div>
+        <div className={s.field}>
+          <label htmlFor="description" className={s.label}>
+            Description
+          </label>
+          <input
+            onChange={handleChange}
+            className={s.input}
+            type="text"
+            placeholder="Enter description"
+            value={data.description}
+            name="description"
+            required
+          />
+        </div>
 
         {/* TODO: Реализовать выбор пользователя */}
         {/* <select name="" id=""></select> */}
