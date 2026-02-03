@@ -40,7 +40,7 @@ class TaskService {
       throw new AppError(ERROR_CODES.TASK_NOT_FOUND, 404);
     }
 
-    return task.update(body);
+    return await task.update(body);
   }
 
   async deleteTask(id) {

@@ -21,6 +21,7 @@ export const TasksPage = () => {
     const result = await TASK_SERVICE.create(task, token);
 
     const { data } = result;
+    console.log(`data: ${data}`);
     setTasks([...tasks, data]);
   };
 

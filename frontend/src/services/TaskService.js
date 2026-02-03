@@ -32,7 +32,18 @@ export const TASK_SERVICE = {
     return await response.json();
   },
 
-  update: async () => {},
+  update: async (taskId, userId, task, token) => {
+    const response = await fetch(`${BASE_URL}/tasks/${taskId}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({ userId, ...task }),
+    });
+
+    return await response.json();
+  },
 
   deleteAll: async () => {},
 
