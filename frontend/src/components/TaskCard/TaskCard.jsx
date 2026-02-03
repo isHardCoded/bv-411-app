@@ -101,8 +101,12 @@ export const TaskCard = ({ task, deleteTask }) => {
         <div className={s.details}>
           <div className={s.author}>
             <p>Author</p>
-            <img className={s.avatar} src={user.avatar} alt={`${user.firstname} ${user.lastname}`}
-                title={`${user.firstname} ${user.lastname}`} />
+            <img
+              className={s.avatar}
+              src={user.avatar}
+              alt={`${user.firstname} ${user.lastname}`}
+              title={`${user.firstname} ${user.lastname}`}
+            />
           </div>
 
           {/* {assigneesUsers.length > 0 && (
